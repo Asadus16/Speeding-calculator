@@ -1,0 +1,27 @@
+p {
+  margin-bottom: 3px;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+.form {
+  margin-left: 120px;
+}
+select {
+  width: 90%;
+  height: 40px;
+  padding: 9px;
+  font-size: 15px;
+}
+#display-el {
+  background-color: red;
+  width: 90%;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+input{
+  width: 88%;
+  height: 25px;
+  padding: 9px;
+  font-size: 15px;
+}

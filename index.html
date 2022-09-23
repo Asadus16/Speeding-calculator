@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="tab-1">
+        <p>What was the speed limit in the force ?</p>
+        <select id="speed-limits" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Less than speed limit">Less than speed limit</option>
+          <option value="10 mph">10 mph</option>
+          <option value="15 mph">15 mph</option>
+          <option value="20 mph">20 mph</option>
+          <option value="30 mph">30 mph</option>
+          <option value="40 mph">40 mph</option>
+          <option value="50 mph">50 mph</option>
+          <option value="60 mph">60 mph</option>
+          <option value="70 mph">70 mph</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-2">
+        
+        <p>Your recorded speed miles above the limit ?</p>
+        <input type="number" value="" id="recorded-speed" onchange="dropdownChange(this.value)">
+        
+      </div>
+      <br />
+
+      <div class="tab-3">
+        <p>How long have you held your full driving license?</p>
+        <select id="driving-license" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Less than 2 years">Less than 2 years</option>
+          <option value="Over 2 years">Over 2 years</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-4">
+        <p>How many points do you have on your driving record?</p>
+        <select id="DL-points" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="None">None - license is clean</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-5">
+        <p>What paperwork have you had?</p>
+        <select id="paperwork" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="None, just stopped or flashed by camera">
+            None, just stopped or flashed by camera
+          </option>
+          <option value="Notice of intended prosecution">
+            Notice of intended prosecution
+          </option>
+          <option value="Fixed penalty notice">Fixed penalty notice</option>
+          <option value="Single justice procedure notice">
+            Single justice procedure notice
+          </option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-6">
+        <p>Were you towing a trailer?</p>
+        <select id="towing-trailer" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-7">
+        <p>Were you driving a LGV, HGV or PSV?</p>
+        <select id="L-H-P" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-8">
+        <p>Were you on a single carriage or dual carriage way?</p>
+        <select id="carriage-capacity" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Single carriage way">Single carriage way</option>
+          <option value="Dual carriage way">Dual carriage way</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-9">
+        <p>Were you near a school?</p>
+        <select id="near-school" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-10">
+        <p>Were the road conditions / weather poor?</p>
+        <select id="conditions" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-11">
+        <p>Were you carrying passengers?</p>
+        <select id="passengers" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="tab-12">
+        <p>Were you driving for reward or hire?</p>
+        <select id="driving-for" onchange="dropdownChange()">
+          <option value="- - -">- - -</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="display-box">
+        <p id="display-el">...</p>
+      </div>
+    </div>
+  </body>
+  <script src="Code.js"></script>
+</html>
